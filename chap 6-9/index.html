@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 6-9</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <table>
+        <thead style="font-weight: bold;">
+            <td>Subject</td>
+            <td>Total</td>
+            <td>Marks Obtained</td>
+            <td>Percentage</td>
+        </thead>
+        <tr>
+            <td>English</td>
+            <td>100</td>
+            <td id="english">67</td>
+            <td id="per1"></td>
+        </tr>
+
+        <tr>
+            <td>Math</td>
+            <td>100</td>
+            <td id="math">45</td>
+            <td id="per2"></td>
+        </tr>
+        <tr>
+            <td>Urdu</td>
+            <td>100</td>
+            <td id="urdu">20</td>
+            <td id="per3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="tmarks"></td>
+            <td id="omarks"></td>
+            <td id="tper"></td>
+        </tr>
+    </table>
+
+    <script>
+       
+
+        //CHAPTER 6-9
+        //Q5
+        var mark1 = +prompt("enter english marks");
+        document.getElementById("english").innerHTML= mark1;
+
+        var mark2 = +prompt("enter math marks");
+        document.getElementById("math").innerHTML= mark2;
+
+        var mark3 = +prompt("enter urdu marks");
+        document.getElementById("urdu").innerHTML= mark3;
+        var per;
+        per = (mark1/100)*100;
+        document.getElementById("per1").innerHTML= (mark1+"%");
+        document.getElementById("per2").innerHTML= (mark2+"%");
+        document.getElementById("per3").innerHTML= (mark3+"%");
+        
+        document.getElementById("tmarks").innerHTML= 300;
+        document.getElementById("omarks").innerHTML= (mark3+mark2+mark1);
+        document.getElementById("tper").innerHTML= ((mark1+mark2+mark3)/3+"%");
+        
+        
+    </script>
+</body>
+</html>
